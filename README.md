@@ -24,26 +24,28 @@ This package can be found on [Packagist](http://packagist.org) and installed wit
 
 Require the package for _macos_ with:
 
-    php composer.phar require oleg-andreyev/wkhtmltopdf-macos "0.12.4"
+    php composer.phar require oleg-andreyev/wkhtmltopdf-osx "0.12.5"
 
 The binary will then be located at:
 
-    vendor/oleg-andreyev/wkhtmltopdf-macos/bin/wkhtmltopdf-macos
+    vendor/oleg-andreyev/wkhtmltopdf-osx/bin/wkhtmltopdf-amd64
+    vendor/oleg-andreyev/wkhtmltopdf-osx/bin/wkhtmltopdf-i386
 
 Also a symlink will be created in your configured bin/ folder, for example:
 
-    vendor/bin/wkhtmltopdf-macos
+    vendor/bin/wkhtmltopdf-amd64
+    vendor/bin/wkhtmltopdf-i386
 
 ### Usage
 
 You can use the path constant to easily locate the binary in the PHP codebase: 
 
 ``` php
-$path = \OAndreyev\WKHTMLToPDF\WKHTMLToPDF::PATH;
+$path = \OAndreyev\WKHTMLToPDF\WKHTMLToPDF::PATH_AMD64;
 ```
 
 For realpath use following script
 
 ``` php
-$realpath = realpath(\OAndreyev\WKHTMLToPDF\WKHTMLToPDF::PATH);
+$realpath = realpath(\OAndreyev\WKHTMLToPDF\WKHTMLToPDF::PATH_AMD64);
 ```

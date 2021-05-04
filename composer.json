@@ -1,5 +1,5 @@
 {
-    "name": "oleg-andreyev/wkhtmltopdf-macos",
+    "name": "oleg-andreyev/wkhtmltopdf-osx",
     "description": "Convert html to pdf using webkit (qtwebkit). Static linked binary for MacOS systems.",
     "keywords": [
         "pdf",
@@ -19,7 +19,8 @@
     ],
     "minimum-stability": "stable",
     "bin": [
-        "bin/wkhtmltopdf-macos"
+        "bin/wkhtmltopdf-amd64",
+        "bin/wkhtmltopdf-i386"
     ],
     "autoload": {
         "psr-4": {
